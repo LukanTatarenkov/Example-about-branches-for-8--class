@@ -1,10 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeCraft — Мистецтво Програмування</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <h1>гілка vlada</h1>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">&lt;CodeCraft/&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#about">Про нас</a></li>
+      <li><a href="#topics">Теми</a></li>
+      <li><a href="#languages">Мови</a></li>
+      <li><a href="#contact">Контакт</a></li>
+    </ul>
+    <a href="#topics" class="nav-cta">Почати →</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot"></span> Онлайн-платформа
+      </div>
+      <h1 class="hero-title">
+        <span class="line">НАВЧИСЬ</span>
+        <span class="line accent">КОДУВАТИ</span>
+        <span class="line">З НУЛЯ</span>
+      </h1>
+      <p class="hero-sub">
+        Від першого рядка коду до повноцінного проєкту.<br/>
+        Практика, теорія і спільнота в одному місці.
+      </p>
+      <div class="hero-actions">
+        <a href="#topics" class="btn-primary">Почати безкоштовно</a>
+        <a href="#about" class="btn-ghost">Дізнатись більше</a>
+      </div>
+    </div>
+
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="t-btn red"></span>
+        <span class="t-btn yellow"></span>
+        <span class="t-btn green"></span>
+        <span class="t-title">main.py</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="c-keyword">def</span> <span class="c-fn">greet</span>(name):</p>
+        <p class="indent"><span class="c-keyword">return</span> <span class="c-str">f"Привіт, {name}!"</span></p>
+        <br/>
+        <p><span class="c-comment"># Твій перший крок</span></p>
+        <p><span class="c-fn">print</span>(greet(<span class="c-str">"Світ"</span>))</p>
+        <br/>
+        <p class="output"><span class="caret">▶</span> Привіт, Світ!</p>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>↓ scroll</span>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-item">
+      <span class="stat-num">12+</span>
+      <span class="stat-label">Мов програмування</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">500+</span>
+      <span class="stat-label">Практичних завдань</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">50K+</span>
+      <span class="stat-label">Активних студентів</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <span class="stat-num">98%</span>
+      <span class="stat-label">Задоволених учнів</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-left">
+      <div class="section-tag">// Про платформу</div>
+      <h2 class="section-title">Кодування — <br/><em>це суперсила</em></h2>
+      <p class="about-text">
+        CodeCraft — це не просто курси. Це середовище, де ти вчишся думати як розробник:
+        вирішувати задачі, будувати системи й перетворювати ідеї на продукти.
+      </p>
+      <p class="about-text">
+        Ми поєднуємо теорію з практикою, щоб ти не просто читав код — а писав його щодня.
+      </p>
+      <div class="about-badges">
+        <span class="badge">🧠 Структуровано</span>
+        <span class="badge">⚡ Практично</span>
+        <span class="badge">🌍 Українською</span>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-card">
+        <div class="card-icon">01</div>
+        <h3>Теорія</h3>
+        <p>Чіткі пояснення концепцій без зайвої води.</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">02</div>
+        <h3>Практика</h3>
+        <p>Інтерактивні завдання прямо в браузері.</p>
+      </div>
+      <div class="about-card">
+        <div class="card-icon">03</div>
+        <h3>Проєкти</h3>
+        <p>Реальні проєкти для портфоліо.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="topics" id="topics">
+    <div class="topics-header">
+      <div class="section-tag">// Теми</div>
+      <h2 class="section-title">Що ти вивчиш</h2>
+    </div>
+    <div class="topics-grid">
+      <div class="topic-card featured">
+        <span class="topic-num">01</span>
+        <h3>Основи програмування</h3>
+        <p>Змінні, умови, цикли, функції — фундамент будь-якої мови.</p>
+        <a href="#" class="topic-link">Почати →</a>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">02</span>
+        <h3>Алгоритми та структури даних</h3>
+        <p>Масиви, списки, дерева, сортування — думай ефективно.</p>
+        <a href="#" class="topic-link">Почати →</a>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">03</span>
+        <h3>Веб-розробка</h3>
+        <p>HTML, CSS, JavaScript — створюй сайти з нуля.</p>
+        <a href="#" class="topic-link">Почати →</a>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">04</span>
+        <h3>Бекенд розробка</h3>
+        <p>Сервери, бази даних, API — серце сучасних додатків.</p>
+        <a href="#" class="topic-link">Почати →</a>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">05</span>
+        <h3>Об'єктно-орієнтоване програмування</h3>
+        <p>Класи, інкапсуляція, поліморфізм — пиши чистий код.</p>
+        <a href="#" class="topic-link">Почати →</a>
+      </div>
+      <div class="topic-card">
+        <span class="topic-num">06</span>
+        <h3>Git та версіонування</h3>
+        <p>Контроль версій — обов'язкова навичка кожного розробника.</p>
+        <a href="#" class="topic-link">Почати →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section class="languages" id="languages">
+    <div class="section-tag">// Мови програмування</div>
+    <h2 class="section-title">Обери свою мову</h2>
+    <div class="lang-list">
+      <div class="lang-item" data-lang="Python">
+        <div class="lang-icon">🐍</div>
+        <div class="lang-name">Python</div>
+        <div class="lang-level">Початківець</div>
+      </div>
+      <div class="lang-item" data-lang="JavaScript">
+        <div class="lang-icon">⚡</div>
+        <div class="lang-name">JavaScript</div>
+        <div class="lang-level">Середній</div>
+      </div>
+      <div class="lang-item" data-lang="C++">
+        <div class="lang-icon">⚙️</div>
+        <div class="lang-name">C++</div>
+        <div class="lang-level">Просунутий</div>
+      </div>
+      <div class="lang-item" data-lang="Java">
+        <div class="lang-icon">☕</div>
+        <div class="lang-name">Java</div>
+        <div class="lang-level">Середній</div>
+      </div>
+      <div class="lang-item" data-lang="Rust">
+        <div class="lang-icon">🦀</div>
+        <div class="lang-name">Rust</div>
+        <div class="lang-level">Просунутий</div>
+      </div>
+      <div class="lang-item" data-lang="Go">
+        <div class="lang-icon">🐹</div>
+        <div class="lang-name">Go</div>
+        <div class="lang-level">Середній</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Готовий почати?</h2>
+      <p>Приєднуйся до 50,000+ розробників, які вже навчаються на CodeCraft.</p>
+      <a href="#" class="btn-primary large">Зареєструватись безкоштовно →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">&lt;CodeCraft/&gt;</div>
+        <p>Навчи себе кодувати.<br/>Змінити своє майбутнє.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Навчання</h4>
+          <a href="#">Курси</a>
+          <a href="#">Задачі</a>
+          <a href="#">Проєкти</a>
+        </div>
+        <div class="footer-col">
+          <h4>Спільнота</h4>
+          <a href="#">Discord</a>
+          <a href="#">Блог</a>
+          <a href="#">Подкаст</a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакт</h4>
+          <a href="#">hello@codecraft.ua</a>
+          <a href="#">Telegram</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 CodeCraft. Всі права захищені.</span>
+      <span>Зроблено з ❤️ в Україні</span>
+    </div>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
+    document.querySelectorAll('a, button, .lang-item, .topic-card').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.topic-card, .about-card, .lang-item, .stat-item').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Typewriter for terminal
+    const output = document.querySelector('.output');
+    const text = output.textContent;
+    output.textContent = '';
+    let i = 0;
+    const type = () => {
+      if (i < text.length) { output.textContent += text[i++]; setTimeout(type, 60); }
+    };
+    setTimeout(type, 1200);
+  </script>
 </body>
 </html>
